@@ -11,5 +11,6 @@ All Nitro Codes are Randomly Generated, before you reply with "fAkE nItRo CoDeS 
 # How To Install
 Firstly Run "install.bat" or go to your Terminal and paste in "pip install -r requirements.txt"
 Then Run "START.bat" and you should be good to go!
+You MUST Have The Latest Version of Python installed [(Python 3.7.12)](https://www.python.org/downloads/release/python-3712/) (recommended). I Am not sure how smoothly or if it would run at all on other versions!
 #
 Any Issues Please Let Me Know!
