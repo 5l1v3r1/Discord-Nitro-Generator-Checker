@@ -1,6 +1,5 @@
 # Discord-Nitro-Generator-Checker
-This is an open-source Discord Nitro Generator written in Python. All Code is belonging to cutieQue, meaning you have no rights to copy / modify this code.
-Please understand it took ages to make this.
+This is an open-source Discord Nitro Generator written in Python! Please Do Not Copy, unless you Credit!
 # Features
 + Nitro Code Generation, amount you choice!
 + Nitro Code Checking while Generating.
