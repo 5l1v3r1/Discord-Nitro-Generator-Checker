@@ -7,5 +7,3 @@ Please understand it took ages to make this.
 + Summary Screen Once Finished Generating.
 # Things To Note
 All Nitro Codes are Randomly Generated, before you reply with "fAkE nItRo CoDeS wErE aLl InVaLiD!" just remember that it is super unlikely you will get a valid code. 
-
-MIT cutieQue
