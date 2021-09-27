@@ -8,7 +8,7 @@ This is an open-source Discord Nitro Generator written in Python! Please Do Not 
 ## Things To Note
 All Nitro Codes are Randomly Generated, before you reply with "fAkE nItRo CoDeS wErE aLl InVaLiD!" just remember that it is super unlikely you will get a valid code. 
 ## Installation
-+ GIT 
++ GitHub 
 ```
 git clone https://github.com/cutieQue/Discord-Nitro-Generator-Checker.git
 ```
