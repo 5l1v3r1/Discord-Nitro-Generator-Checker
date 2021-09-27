@@ -5,6 +5,7 @@ Please understand it took ages to make this.
 + Nitro Code Generation, amount you choice!
 + Nitro Code Checking while Generating.
 + Summary Screen Once Finished Generating.
++ Discord Webhook (Valid Codes get posted straight to a Discord Webhook!)
 # Things To Note
 All Nitro Codes are Randomly Generated, before you reply with "fAkE nItRo CoDeS wErE aLl InVaLiD!" just remember that it is super unlikely you will get a valid code. 
 # How To Install
