@@ -32,6 +32,6 @@ Any Issues Please Let Me Know!
 ##
 - [x] Is This Still Being Updated?
 - [x] Is it easy to use?
-- [x] In Beta?
+- [] In Beta?
 ## LICENSE
 [MIT](LICENSE) Que
