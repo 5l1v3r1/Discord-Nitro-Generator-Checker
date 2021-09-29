@@ -1,4 +1,5 @@
 import time
+from time import sleep
 import os
 time.sleep(0.3)
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -40,12 +41,14 @@ class NitroGen:
         time.sleep(0.5)
         self.slowType(f"{Fore.LIGHTBLUE_EX}Developed by: cutieQue{Fore.RESET}\n", .02)
         time.sleep(0.4)
-        self.slowType(f"{Fore.LIGHTRED_EX}\nHow Many Codes would you like to Generate and Check? [>] ", .01, newLine = False)
+        self.slowType(f"{Fore.LIGHTRED_EX}\nHow Many Codes? [>] ", .01, newLine = False)
 
         num = int(input(''))
         self.slowType(f"{Fore.LIGHTYELLOW_EX}Enter a Discord Webhook link or press Enter to Ignore. [>] {Fore.RESET}", .01, newLine = False)
         url = input('')
         webhook = url if url != "" else None
+        sleep(1)
+        print(f"{Fore.LIGHTYELLOW_EX}------------------------------------------------------------------------------------------------------------------------")
 
 
         valid = []
@@ -72,13 +75,15 @@ class NitroGen:
                 ctypes.windll.kernel32.SetConsoleTitleW(f"Super Fast NG&C - {len(valid)} Valid | {invalid} Invalid - Developed by cutieQue")
                 print("")
             else:
-                print(f'\33]0;Super Fast NG&C - {len(valid)} Valid | {invalid} Invalid - Developed by cutieQue\a', end='', flush=True)
+                print(f'\33]0;Discord Nitro Generator & Checker! - {len(valid)} Valid | {invalid} Invalid - Developed by cutieQue\a', end='', flush=True)
 
         print(f"""
+{Fore.LIGHTYELLOW_EX}------------------------------------------------------------------------------------------------------------------------
 {Fore.LIGHTYELLOW_EX}Results:
 {Fore.LIGHTGREEN_EX}Valid: {len(valid)}
 {Fore.RESET}{Fore.LIGHTRED_EX}Invalid: {invalid}
-{Fore.LIGHTGREEN_EX}Valid Codes: {', '.join(valid )}{Fore.RESET}""")
+{Fore.LIGHTGREEN_EX}Valid Nitro Codes: {', '.join(valid )}{Fore.RESET}""")
+
 
         input(f"{Fore.WHITE}\nPress Enter to Exit!")
 
