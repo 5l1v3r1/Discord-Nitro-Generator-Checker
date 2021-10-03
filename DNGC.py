@@ -10,12 +10,12 @@ from colorama import Fore, Back, Style
 try:
     from discord_webhook import DiscordWebhook
 except ImportError:
-    input(f"Module discord_webhook not installed, to install run '{'py -3' if os.name == 'nt' else 'python3.8'} -m pip install discord_webhook'\nPress enter to exit") # Tell the user it has not been installed and how to install it
+    input(f"Module discord_webhook not installed, to install run '{'py -3' if os.name == 'nt' else 'python3.9'} pip install discord_webhook'\nPress enter to exit") # Tell the user it has not been installed and how to install it
     exit()
 try:
     import requests
 except ImportError:
-    input(f"Module requests not installed, to install run '{'py -3' if os.name == 'nt' else 'python3.8'} -m pip install requests'\nPress enter to exit")# Tell the user it has not been installed and how to install it
+    input(f"Module requests not installed, to install run '{'py -3' if os.name == 'nt' else 'python3.9'} pip install requests'\nPress enter to exit")# Tell the user it has not been installed and how to install it
     exit()
 class NitroGen:
     def __init__(self):
@@ -26,29 +26,30 @@ class NitroGen:
         if os.name == "nt":
             print("")
             os.system('cls' if os.name == 'nt' else 'clear')
-            ctypes.windll.kernel32.SetConsoleTitleW("Discord Nitro Generator and Checker! - Developed by: cutieQue")
+            ctypes.windll.kernel32.SetConsoleTitleW("Discord Nitro Generator and Checker! | NOT STARTED GENERATOR / CHECKER | Developed by: cutieQue")
         else:
-            print(f'\33]0;Discord Nitro Generator and Checker! - Developed by: cutieQue\a', end='', flush=True)
+            print(f'\33]0;Discord Nitro Generator and Checker! | NOT STARTED GENERATOR / | CHECKER Developed by: cutieQue\a', end='', flush=True)
 
-        self.slowType(f"""{Fore.RED + Style.BRIGHT}
+        print(f"""{Fore.RED + Style.BRIGHT}
 ██████╗░██╗░██████╗░█████╗░░█████╗░██████╗░██████╗░  ███╗░░██╗██╗████████╗██████╗░░█████╗░
 ██╔══██╗██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ████╗░██║██║╚══██╔══╝██╔══██╗██╔══██╗
 ██║░░██║██║╚█████╗░██║░░╚═╝██║░░██║██████╔╝██║░░██║  ██╔██╗██║██║░░░██║░░░██████╔╝██║░░██║
 ██║░░██║██║░╚═══██╗██║░░██╗██║░░██║██╔══██╗██║░░██║  ██║╚████║██║░░░██║░░░██╔══██╗██║░░██║
 ██████╔╝██║██████╔╝╚█████╔╝╚█████╔╝██║░░██║██████╔╝  ██║░╚███║██║░░░██║░░░██║░░██║╚█████╔╝
-╚═════╝░╚═╝╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░  ╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░{Fore.RESET}""", .00)
+╚═════╝░╚═╝╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░  ╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░{Fore.RESET}""")
         self.slowType(f"{Fore.LIGHTYELLOW_EX}Generator and Checker!{Fore.RESET}", .01)
         time.sleep(0.5)
-        self.slowType(f"{Fore.LIGHTBLUE_EX}Developed by: cutieQue{Fore.RESET}\n", .02)
+        self.slowType(f"{Fore.LIGHTBLUE_EX}Developed by: cutieQue{Fore.RESET}\n", .01)
         time.sleep(0.4)
-        self.slowType(f"{Fore.LIGHTRED_EX}\nHow Many Codes? [>] ", .01, newLine = False)
+        self.slowType(f"{Fore.LIGHTRED_EX}\nHow Many Codes? \n[>] {Fore.RESET}", .01, newLine = False)
+
 
         num = int(input(''))
-        self.slowType(f"{Fore.LIGHTYELLOW_EX}Enter a Discord Webhook link or press Enter to Ignore. [>] {Fore.RESET}", .01, newLine = False)
+        self.slowType(f"{Fore.LIGHTYELLOW_EX}Enter a Discord Webhook link or press Enter to Ignore. \n[>] {Fore.RESET}", .01, newLine = False)
         url = input('')
         webhook = url if url != "" else None
-        sleep(1)
-        print(f"{Fore.LIGHTYELLOW_EX}------------------------------------------------------------------------------------------------------------------------")
+        sleep(0.5)
+        print(f"{Fore.LIGHTYELLOW_EX}{Style.BRIGHT}------------------------------------------------------------------------------------------------------------------------\n")
 
 
         valid = []
@@ -72,18 +73,18 @@ class NitroGen:
                 print(f" Error: {url} ")
 
             if os.name == "nt":
-                ctypes.windll.kernel32.SetConsoleTitleW(f"Super Fast NG&C - {len(valid)} Valid | {invalid} Invalid - Developed by cutieQue")
+                ctypes.windll.kernel32.SetConsoleTitleW(f"Discord Nitro Generator & Checker! | {len(valid)} Valid Nitro Codes Found | {invalid} Invalid Nitro Codes Found | RUNNING GENERATOR / CHECKER | Developed by cutieQue")
                 print("")
             else:
-                print(f'\33]0;Discord Nitro Generator & Checker! - {len(valid)} Valid | {invalid} Invalid - Developed by cutieQue\a', end='', flush=True)
+                print(f'\33]0;Discord Nitro Generator & Checker! - {len(valid)} Valid Nitro Codes Found | {invalid} Invalid Nitro Codes Found | RUNNING GENERATOR / CHECKER - Developed by cutieQue\a', end='', flush=True)
 
         print(f"""
-{Fore.LIGHTYELLOW_EX}------------------------------------------------------------------------------------------------------------------------
+{Fore.LIGHTYELLOW_EX}{Style.BRIGHT}------------------------------------------------------------------------------------------------------------------------
 {Fore.LIGHTYELLOW_EX}Results:
-{Fore.LIGHTGREEN_EX}Valid: {len(valid)}
-{Fore.RESET}{Fore.LIGHTRED_EX}Invalid: {invalid}
-{Fore.LIGHTGREEN_EX}Valid Nitro Codes: {', '.join(valid )}{Fore.RESET}""")
-
+{Fore.LIGHTGREEN_EX}Valid:{Fore.RESET} {len(valid)}
+{Fore.RESET}{Fore.LIGHTRED_EX}Invalid:{Fore.RESET} {invalid}
+{Fore.LIGHTGREEN_EX}Valid Nitro Codes:{Fore.RESET} {', '.join(valid )}{Fore.RESET}""")
+        ctypes.windll.kernel32.SetConsoleTitleW(f"Discord Nitro Generator & Checker! | {len(valid)} Valid Nitro Codes Found | {invalid} Invalid Nitro Codes Found | STOPPED GENERATOR / CHECKER | Developed by cutieQue")
 
         input(f"{Fore.WHITE}\nPress Enter to Exit!")
 
@@ -123,7 +124,7 @@ class NitroGen:
                 response = requests.get(url)
 
                 if response.status_code == 200:
-                    print(f" Valid: {nitro} ")
+                    print(f" Valid:{Fore.RESET} {nitro} ")
                     valid.append(nitro)
 
                     if notify is not None:
@@ -135,7 +136,7 @@ class NitroGen:
                         break
 
                 else:
-                    print(f" Invalid: {nitro} ")
+                    print(f" Invalid:{Fore.RESET} {nitro} ")
                     invalid += 1
 
         return {f"{Fore.LIGHTGREEN_EX}valid" : valid, f"{Fore.RED}invalid" : invalid}
@@ -158,7 +159,7 @@ class NitroGen:
             return True
 
         else:
-            print(f"{Fore.RED} Invalid: {nitro} ", flush=True, end="" if os.name == 'nt' else "\n")
+            print(f"{Fore.RED} Invalid:{Fore.RESET} {nitro} ", flush=True, end="" if os.name == 'nt' else "\n")
             return False
 
 if __name__ == '__main__':
