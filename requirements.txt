@@ -2,7 +2,4 @@ requests
 discord_webhook
 colored
 colorama
-random
-os
-string
-ctypes
+datetime
