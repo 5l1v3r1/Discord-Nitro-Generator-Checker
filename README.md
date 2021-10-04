@@ -16,13 +16,9 @@ Run
 ```
 "install.bat"
 ``` 
-or go to your Terminal and paste in 
+Then Run the new file
 ```
-"pip install -r requirements.txt"
-```
-Then Run 
-```
-"START.bat"
+"START-PROGRAM.bat"
 ```
 and you should be good to go!
 
