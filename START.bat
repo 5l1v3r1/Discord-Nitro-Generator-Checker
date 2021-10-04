@@ -1,2 +1,0 @@
-python DNGC.py
-pause
