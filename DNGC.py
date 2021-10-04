@@ -110,7 +110,7 @@ class NitroGen:
 
                 file.write(f"https://discord.gift/{code}\n")
 
-            print(f"Generated {amount} codes! | Time taken: {round(time.time() - start, 5)}s\n") #
+            print(f"Generated {amount} codes! | Amount of Time it Took: {round(time.time() - start, 5)}s\n") #
 
     def fileChecker(self, notify = None):
         valid = []
@@ -124,7 +124,7 @@ class NitroGen:
                 response = requests.get(url)
 
                 if response.status_code == 200:
-                    print(f" Valid:{Fore.RESET} {nitro} ")
+                    print(f"{Fore.WHITE}[{Fore.GREEN}!{Fore.WHITE}] {Fore.GREEN}Valid {Fore.LIGHTYELLOW_EX}|{Fore.RESET} {nitro} ")
                     valid.append(nitro)
 
                     if notify is not None:
@@ -136,7 +136,7 @@ class NitroGen:
                         break
 
                 else:
-                    print(f" Invalid:{Fore.RESET} {nitro} ")
+                    print(f"{Fore.WHITE}[{Fore.RED}!{Fore.WHITE}] {Fore.RED}Invalid {Fore.LIGHTYELLOW_EX}|{Fore.RESET} {nitro} ")
                     invalid += 1
 
         return {f"{Fore.LIGHTGREEN_EX}valid" : valid, f"{Fore.RED}invalid" : invalid}
@@ -146,7 +146,7 @@ class NitroGen:
         response = requests.get(url)
 
         if response.status_code == 200:
-            print(f"{Fore.LIGHTGREEN_EX} Valid | {nitro} ", flush=True, end="" if os.name == 'nt' else "\n")
+            print(f"{Fore.WHITE}[{Fore.GREEN}!{Fore.WHITE}] {Fore.GREEN}Valid | {nitro} ", flush=True, end="" if os.name == 'nt' else "\n")
             with open("Nitro Codes - Developed by cutieQue.txt", "w") as file:
                 file.write(nitro)
 
@@ -159,7 +159,7 @@ class NitroGen:
             return True
 
         else:
-            print(f"{Fore.RED} Invalid:{Fore.RESET} {nitro} ", flush=True, end="" if os.name == 'nt' else "\n")
+            print(f"{Fore.WHITE}[{Fore.RED}!{Fore.WHITE}] {Fore.RED}Invalid {Fore.LIGHTYELLOW_EX}|{Fore.RESET} {nitro} ", flush=True, end="" if os.name == 'nt' else "\n")
             return False
 
 if __name__ == '__main__':
